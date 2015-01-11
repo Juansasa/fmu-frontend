@@ -5,7 +5,9 @@
     "jquery": "~1.11.1",
     "modernizr": "~2.8.2",
     "bourbon": "latest",
-    "neat" : "latest",
-    "angular": "latest"
+    "angular": "latest",
+    "susy": "latest",
+    "breakpoint": "latest",
+    "typeplate-starter-kit": "latest"
   }
 }

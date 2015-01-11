@@ -24,21 +24,61 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <form>
-        <div>
-          <label for="email"> Email Adress:
-            <em class="feedback">Incorrect address. Please try again</em>
-          </label>
+    <div class="container">
+<h1>The 10 column complex nested grid AG test</h1>
 
-          <input name="email" id="email" type="text">
-      </div>
-    </form>
+<div class="ag ag1">
+  <h2>AG 1</h2>
+</div>
+<!-- /ag1 -->
+
+<!-- ag4 to ag7 are nested within ag2.-->
+<div class="ag ag2">
+  <h2>AG 2</h2>
+  <div class="ag ag4">
+    <h2>AG 4</h2>
+  </div>
+  <div class="ag ag5">
+    <h2>AG 5</h2>
+  </div>
+  <div class="ag ag6">
+    <h2>AG 6</h2>
+  </div>
+
+  <!-- ag8, ag9 and ag10 are nested within ag7 -->
+  <div class="ag ag7">
+    <h2>AG 7</h2>
+    <div class="ag ag8">
+      <h2>AG 8</h2>
+    </div>
+    <div class="ag ag9">
+      <h2>AG 9</h2>
+    </div>
+    <div class="ag ag10">
+      <h2>AG 10</h2>
+    </div>
+  </div>
+  <!-- /ag7 -->
+</div>
+<!-- /ag2 -->
+
+<div class="ag ag3">
+  <h2>AG 3</h2>
+</div>
+<!-- /ag3 -->
+
+</div>
+<!-- /container -->
 
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/eventEmitter/EventEmitter.js"></script>
+    <script src="bower_components/eventie/eventie.js"></script>
+    <script src="bower_components/imagesloaded/imagesloaded.js"></script>
+    <script src="bower_components/breakpoint/jquery.breakpoint.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
