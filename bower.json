@@ -7,7 +7,7 @@
     "bourbon": "latest",
     "angular": "latest",
     "susy": "latest",
-    "breakpoint": "latest",
+    "breakpoint-sass": "latest",
     "typeplate-starter-kit": "latest"
   }
 }
